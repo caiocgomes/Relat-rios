@@ -1,0 +1,8 @@
+README.txt
+suggest.i
+suggest.py
+test_suggest.py
+pip-egg-info/pysuggest.egg-info/PKG-INFO
+pip-egg-info/pysuggest.egg-info/SOURCES.txt
+pip-egg-info/pysuggest.egg-info/dependency_links.txt
+pip-egg-info/pysuggest.egg-info/top_level.txt

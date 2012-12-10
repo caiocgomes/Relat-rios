@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js.gz"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="section titleslide slide level1" id="informações-gerais"><h1>Informações Gerais</h1></div><div class="section slide level2" id="objetivos">
+<h1>Objetivos</h1>
+<ul class="incremental">
+<li>Analisar o comportamento do usuário <a href="www.apontador.com">Apontador</a> em relação a concessionárias</li>
+<li>Compreender as diferenças do comportamento deste tipo de usuário ao usuário comum</li>
+<li>Compreender a distribuição temporal e espacial das buscas por concessionárias</li>
+<li>Analisar a existência similaridades de marcas pelas buscas dos usuários</li>
+</ul>
+</div><div class="section slide level2" id="composição-da-base">
+<h1>Composição da base</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Marca</th>
+<th align="center">Quantidade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">GM</td>
+<td align="center">583</td>
+</tr>
+<tr class="even">
+<td align="center">Hyundai</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">Renault</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Ford</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">Fiat</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Volkswagen</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">Kia</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Toyota</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">Honda</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Citröen</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div><div class="section slide level2" id="evolução-de-visitas-a-concessionárias-no-site-apontador">
+<h1>Evolução de visitas a concessionárias no site Apontador</h1>
+<div class="figure">
+<img src="./TotalVisitas.jpg" /><p class="caption"></p>
+</div>
+</div><div class="section slide level2" id="evolução-das-visitas-de-usuários-por-marca">
+<h1>Evolução das visitas de usuários por marca</h1>
+</div><div class="section slide level2" id="comportamento-padrão-do-usuário">
+<h1>Comportamento padrão do usuário</h1>
+<div class="figure">
+<img src="./total.jpg" /><p class="caption"></p>
+</div>
+</div><div class="section slide level2" id="comportamento-na-categoria-concessionária">
+<h1>Comportamento na categoria: Concessionária</h1>
+<div class="figure">
+<img src="conc.png" /><p class="caption"></p>
+</div>
+</div><div class="section slide level2" id="resultados">
+<h1>Resultados</h1>
+<p><img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=f%28x%29%20%3D%20ax%20b" alt="f(x) = ax b" title="f(x) = ax b" /></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Total</th>
+<th align="left">Concessionárias</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">a</td>
+<td align="left">0.4649</td>
+<td align="left">0.3540</td>
+</tr>
+<tr class="even">
+<td align="left">b</td>
+<td align="left">0.7391</td>
+<td align="left">-318.221</td>
+</tr>
+</tbody>
+</table>
+<p>A primeira informação que podemos tirar é que o número de ver telefones para o subgrupo concessárias é proporcionalmente menor que o geral. O usuário geral do site tem 31% de chance a ver telefone que o que procura concessionárias.</p>
+</div><div class="section slide level2" id="sazonalidade-de-visitas">
+<h1>Sazonalidade de visitas</h1>
+<div class="figure">
+<img src="weekday.png" /><p class="caption"></p>
+</div>
+</div><div class="section slide level2" id="comparação-da-sazonalidade-das-visitas-vs-ver-telefone">
+<h1>Comparação da Sazonalidade das Visitas vs Ver Telefone</h1>
+<div class="figure">
+<img src="phonevisit.png" /><p class="caption"></p>
+</div>
+<p>Podemos perceber que existe uma aparente mudança da estrutura de visitas nos fins de semana. Apesar de não podermos descartar a hipótese de ser uma questão unicamente estatística, é uma questão que pode necessitar um maior estudo.</p>
+</div><div class="section slide level2" id="similaridades-entre-as-marcas">
+<h1>Similaridades entre as marcas</h1>
+<p>Isso é uma medida de similaridade entre 0 e 1. Ela basicamente indica correlação (é a correlação necessária para explicar a informação mútua observada) de co-ocorrências de diferentes montadoras em visitas de usuários. Quando maior, mas provável é que um usuário que visitou uma também tenha visitado outra.</p>
+<p>Valores maiores que 0.15 podem ser considerados significativos. Eu diria abaixo que os seguintes pares são suficientemente correlacionados para que tenhamos alguma confiança: (FIAT, FORD), (FIAT, GM), (FIAT, HONDA), (FIAT, VW), (FORD, GM), (FORD, HONDA), (FORD, VW), (GM, HONDA).</p>
+</div><div class="section slide level2" id="section">
+
+<table>
+<thead>
+<tr class="header">
+<th align="center">-</th>
+<th align="center">FIAT</th>
+<th align="center">FORD</th>
+<th align="center">GM</th>
+<th align="center">HONDA</th>
+<th align="center">HYUNDAI</th>
+<th align="center">KIA</th>
+<th align="center">TOYOTA</th>
+<th align="center">VW</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">FIAT</td>
+<td align="center">-</td>
+<td align="center">0.381</td>
+<td align="center">0.286</td>
+<td align="center">0.318</td>
+<td align="center">0.113</td>
+<td align="center">0.140</td>
+<td align="center">0.166</td>
+<td align="center">0.231</td>
+</tr>
+<tr class="even">
+<td align="center">FORD</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0.224</td>
+<td align="center">0.266</td>
+<td align="center">0.085</td>
+<td align="center">0.091</td>
+<td align="center">0.122</td>
+<td align="center">0.185</td>
+</tr>
+<tr class="odd">
+<td align="center">GM</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0.186</td>
+<td align="center">0.069</td>
+<td align="center">0.073</td>
+<td align="center">0.089</td>
+<td align="center">0.106</td>
+</tr>
+<tr class="even">
+<td align="center">HONDA</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0.067</td>
+<td align="center">0.102</td>
+<td align="center">0.114</td>
+<td align="center">0.155</td>
+</tr>
+<tr class="odd">
+<td align="center">HYUNDAI</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0.015</td>
+<td align="center">0.029</td>
+<td align="center">0.056</td>
+</tr>
+<tr class="even">
+<td align="center">KIA</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0.056</td>
+<td align="center">0.080</td>
+</tr>
+<tr class="odd">
+<td align="center">TOYOTA</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0.051</td>
+</tr>
+</tbody>
+</table>
+</div><div class="section slide level2" id="visitas-a-concessionárias-por-estado">
+<h1>Visitas a concessionárias por estado</h1>
+<iframe src='https://caiocgomes.cartodb.com/tables/conc_1/embed_map' width = '100%' height = '90%'></iframe>
+
+
+</div><div class="section slide level2" id="distribuição-da-localização-de-concessionárias-pela-cidade-de-são-paulo">
+<h1>Distribuição da localização de concessionárias pela cidade de São Paulo</h1>
+<iframe src='https://calsaverini.cartodb.com/tables/map/embed_map' width = '100%' height = '90%'></iframe>
+
+
+</div><div class="section slide level2" id="distribuição-das-visitas-pela-cidade-de-são-paulo">
+<h1>Distribuição das visitas pela cidade de São Paulo</h1>
+<iframe src='https://calsaverini.cartodb.com/tables/concessionarias2/embed_map' width = '100%' height = '90%'></iframe>
+
+
+</div>
+<div class="section titleslide slide level1" id="informações-sobre-os-usuários"><h1>Informações sobre os usuários</h1></div><div class="section slide level2" id="composição-mf">
+<h1>Composição M/F</h1>
+<div class="figure">
+<img src="./GraficoMF.jpg" /><p class="caption"></p>
+</div>
+</div><div class="section slide level2" id="composição-idades">
+<h1>Composição Idades</h1>
+<div class="figure">
+<img src="./Idades.jpg" /><p class="caption"></p>
+</div>
+</div><div class="section slide level2" id="section-1">
+
+<p>Podemos perceber nesse gráfico que a média de idade para a maior parte das marcas é semelhante. O <em>outlier</em> é Toyota, que apresenta uma idade média significamente superior as outras. Isso está de acordo com a visão da marca, que é conhecida por ser preferência de pessoas já mais estabelecidas, e com uma maior idade.</p>
+</div>
+</body>
+</html>
